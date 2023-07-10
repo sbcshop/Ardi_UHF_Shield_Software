@@ -103,7 +103,7 @@ UHF RFID reader App - [Download](https://github.com/sbcshop/Ardi_UHF_Shield_Soft
 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img.JPG"/>
 
-### Steps Shown below to configure UHF of Ardi UHF shield:
+### Steps shown below to configure UHF of Ardi UHF shield using App:
 * Select suitable com port, you may get different 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img1.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img2.png"/>
