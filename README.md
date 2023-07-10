@@ -1,55 +1,104 @@
 # Ardi_UHF_Shield_Software
 <img src="https://cdn.shopify.com/s/files/1/1217/2104/files/ArdiUHFShield.jpg?v=1683886717">
-Ardi 
+Ardi UHF Shield is designed to seamlessly integrate with your ArdiPi, Ardi-32 and Arduino Uno plus compatible boards, making it accessible to both beginners and experienced users alike.
 
 This github provides getting started guide and other working details for Ardi UHF Shield 
 
 ### Features:
-- Onboard 2.0” TFT Display
-
+- Onboard High-performance UHF RFID reader module
+- 24 hours x 365 days’ work normally
+- 91” OLED display for visual interaction with shield
+- Multi-tone Buzzer onboard for Audio alerts
+- Shield compatible with both 3.3V and 5V MCU
+- Mounts directly onto your [ArdiPi](https://shop.sb-components.co.uk/products/ardipi-uno-r3-alternative-board-based-on-pico-w), [Ardi-32](https://shop.sb-components.co.uk/products/ardi32-uno-r3-alternative-board-based-on-esp32-s3-wroom), and Arduino compatible boards
 
 ### Specifications:
-- Display resolution 240x320 pixels
-
+- OLED resolution 128x32 pixels
+- I2C Interface for OLED
+- UHF Frequency Range :
+	EU/UK: 865.1-867.9 MHz
+	US: 902.25-927.75 MHz
+- Protocols Supported: EPCglobal UHF Class 1 Gen 2 / ISO 18000-6C
+- Reading Distance: 1meters
+- Can identify over 50 tags simultaneously
+- Communication interface: TTL UART Interface for UHF
+- Communication baud rate: 115200 bps（default and recommend) - 38400bps
+- Operation current: 180mA @ 3.5V (26 dBm Output，25°C), 110mA @ 3.5V (18 dBm Output，25°C)
+- Working humidity < 95% (+ 25 °C)
+- Heat-dissipating method Air cooling(no need out install cooling fin）
+- Tags storage capacity: 200pcs tags @ 96 bit EPC
+- Output power: 18-26 dBm
+- Output power accuracy: +/- 1dB
+- Tags RSSI: support
   
-### Hardware Overview
-#### Pinout
+## Hardware Overview
+### Pinout
 <img src="https://cdn.shopify.com/s/files/1/1217/2104/files/ArdiUHFpinout.png?v=1688471914">
 
-- (1) & (4) Programmable Buttons
-- (2) Voltage Selection 3.3V/5V
-- (3) TFT 2.0 Display
-- (5) 5-Way Joystick
+- (1) UHF Lite Module
+- (2) OLED display 
+- (3) Buzzer
 
-**Note:** Don't forget to set jumper selection on correct selection when using with 5V or 3.3V board. Put jumpber on **3V3-SEL** when using with **3.3V MCU boards** and on **SEL-5V** when using with **5V MCU Boards**.
 
-#### Interfacing Details
+### Interfacing Details
 
-When Relay shield mounted on ArdiPi, selection **jumper** must be on **3V3-SEL** side
+When Ardi UHF shield mounted on ArdiPi,
 |ArdiPi | UHF shield | Function |
 |---|---|---|
-| GP18 | CLK | Clock pin of SPI interface for Display |
-| GP16 | BL | BackLight for display |
-| GP19 | DIN | MOSI (Master OUT Slave IN) pin of SPI interface for display |  
-| GP17 | CS | SPI Chip select pin for display |
+| GP1 | U_RX | Serial Tx of UHF to Serial Rx of Pico W |
+| GP0 | U_TX | Serial Rx of UHF to Serial Tx of Pico W |
+| GP5 | U_EN | UHF Enable pin, LOW to disable and HIGH to enable |  
+| GP2 | BUZ | Buzzer +ve Pin |
+| GP20/SDA | SDA | Serial Data for I2C interfacing of OLED display|
+| GP21/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
 
+When Ardi UHF shield mounted on Ardi-32,
+|Ardi-32 | UHF shield | Function |
+|---|---|---|
+| IO18 | U_RX | Serial Tx of UHF to Serial Rx of ESP32 |
+| IO17 | U_TX | Serial Rx of UHF to Serial Tx of ESP32 |
+| IO1 | U_EN | UHF Enable pin, LOW to disable and HIGH to enable |  
+| IO42 | BUZ | Buzzer +ve Pin |
+| IO38/SDA | SDA | Serial Data for I2C interfacing of OLED display|
+| IO39/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
 
+When Ardi UHF shield mounted on Arduino Uno,
+|Arduino UNO | UHF shield | Function |
+|---|---|---|
+| D0 | U_RX | Serial Tx of UHF to Serial Rx of Pico W |
+| D1 | U_TX | Serial Rx of UHF to Serial Tx of Pico W |
+| D2 | U_EN | UHF Enable pin, LOW to disable and HIGH to enable |  
+| D3 | BUZ | Buzzer +ve Pin |
+| A4/SDA | SDA | Serial Data for I2C interfacing of OLED display|
+| A5/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
+
+### Example Codes
+ Ardi UHF shield Sample codes provided for different boards, codes provided with UHF library files in which some of UHF configuration command included. Taking reference of [UHF command manual](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf) you can add more commands for your applications OR use GUI UHF reader apps to configure UHF.
+ - [Ardi UHF shield for UNO]() 
+ - [Ardi UHF shield for Ardi32]() 
+ - [Ardi UHF shield for ArdiPi]()
+ 
+ Using this sample code as a guide, you can modify, build for other boards and share codes!! 
+ 
 ## How to Configure UHF Lite from Application
 Things you will need:
 
-**Hardware->**
+### **Hardware->**
 1. Ardi UHF Shield 
 2. USB to TTL converter [Buy](https://shop.sb-components.co.uk/products/usb-ttl)
 
-**Software->**
-UHF RFID reader App - [Download](https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/uhf%20lite.rar)
+Connect USB-TTL converter to Ardi UHF shield
+
+
+<img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/UHF%20Lite.jpg"/>
+
+### **Software->**
+UHF RFID reader App - [Download](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/UHF%20GUI%20application.rar), Extract and Run Application.
+
+<img src = "https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/run_uhf_app.png" width="538" height="314"/>
 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img.JPG"/>
 
-Connect USB to TTL to Ardi UHF shield:
-Make sure to connect jumper wire as per below image and UHF Expansion ***without*** PICO
-
-<img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/UHF%20Lite.jpg"/>
 Steps Shown below to configure UHF of Ardi UHF shield:
 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img1.png"/>
@@ -61,20 +110,15 @@ Steps Shown below to configure UHF of Ardi UHF shield:
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img7.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img8.png"/>
 
-UHF Command Manual [Download](https://github.com/sbcshop/UHF_Lite_Module/blob/main/UHF%20Lite%20Manual.pdf) 
-
-### Example Codes
- Ardi RFID shield Sample codes provided for different boards
- - [Ardi RFID shield for UNO](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/ArduinoUno_RFID_shield_interfacing) 
- - [Ardi RFID shield for Ardi32](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/Ardi32_RFID_shield_interfacing) 
- - [Ardi RFID shield for ArdiPi](https://github.com/sbcshop/Ardi_RFID_Shield_Software/tree/main/examples/ArdiPi_RFID_shield_interfacing)
- 
- Using this sample code as a guide, you can modify, build for other boards and share codes!!  
+[Download UHF Lite Command Manual](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf) for more detail setup reference. 
    
 ## Resources
   * [Schematic](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/blob/main/Design%20Data/SCH%20UHF%20Lite%20Shield.pdf)
   * [Hardware Files](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/tree/main)
   * [Step File](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/blob/main/Mechanical%20Data/STEP%20UHF%20Lite%20Shield.step)
+  * [Official Arduino Getting Started](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino)
+  * [Official Pico W Getting Started](https://projects.raspberrypi.org/en/projects/get-started-pico-w)
+  * [Official Getting Started with ESP32 in Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
 
 
 ## Related Products
