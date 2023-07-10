@@ -74,7 +74,7 @@ When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will 
 
 ### Example Codes
  Ardi UHF shield Sample codes provided for different boards, codes provided with UHF library files in which some of UHF configuration command included. Taking reference of [UHF command manual](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf) you can add more commands for your applications OR use GUI UHF reader apps to configure UHF.
- - [Ardi UHF shield for ArdiPi](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/ArdiPi_UHF_shield_interfacing) : 
+ - [Ardi UHF shield for ArdiPi](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/ArdiPi_UHF_shield_interfacing)
  - [Ardi UHF shield for Ardi32]() 
  - [Ardi UHF shield for UNO]() 
  
