@@ -88,24 +88,31 @@ Things you will need:
 2. USB to TTL converter [Buy](https://shop.sb-components.co.uk/products/usb-ttl)
 
 Connect USB-TTL converter to Ardi UHF shield
+| USB-TTL | UHF shield | Function |
+|---|---|---|
+| RXD | U_RX | Serial Tx of UHF to RXD of TTL |
+| TXD | U_TX | Serial Rx of UHF to TXD of TTL |
+| VCC | 5V | Serial Data for I2C interfacing of OLED display |
+| GND | GND | Serial Clock for I2C interfacing of OLED display |
 
-
-<img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/UHF%20Lite.jpg"/>
 
 ### **Software->**
 UHF RFID reader App - [Download](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/UHF%20GUI%20application.rar), Extract and Run Application.
 
-<img src = "https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/run_uhf_app.png" width="538" height="314"/>
+<img src = "https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/run_uhf_app.png" width="645" height="377"/>
 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img.JPG"/>
 
-Steps Shown below to configure UHF of Ardi UHF shield:
-
+### Steps Shown below to configure UHF of Ardi UHF shield:
+* Select suitable com port, you may get different 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img1.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img2.png"/>
+* Click on Connect button
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img3.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img4.png"/>
+* Select your region
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img5.png"/>
+* Other settings which you may apply
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img6.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img7.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img8.png"/>
