@@ -62,11 +62,11 @@ When Ardi UHF shield mounted on Ardi-32,
 | IO38/SDA | SDA | Serial Data for I2C interfacing of OLED display|
 | IO39/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
 
-When Ardi UHF shield mounted on Arduino Uno,
+When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will have to remove this UHF shield as it is using Hardware serial pin.
 |Arduino UNO | UHF shield | Function |
 |---|---|---|
-| D0 | U_RX | Serial Tx of UHF to Serial Rx of Pico W |
-| D1 | U_TX | Serial Rx of UHF to Serial Tx of Pico W |
+| D0 | U_RX | Serial Tx of UHF to Serial Rx of Arduino UNO |
+| D1 | U_TX | Serial Rx of UHF to Serial Tx of Arduino UNO |
 | D2 | U_EN | UHF Enable pin, LOW to disable and HIGH to enable |  
 | D3 | BUZ | Buzzer +ve Pin |
 | A4/SDA | SDA | Serial Data for I2C interfacing of OLED display|
