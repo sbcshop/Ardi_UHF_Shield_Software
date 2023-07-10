@@ -72,9 +72,9 @@ UHF Command Manual [Download](https://github.com/sbcshop/UHF_Lite_Module/blob/ma
  Using this sample code as a guide, you can modify, build for other boards and share codes!!  
    
 ## Resources
-  * [Schematic](https://github.com/sbcshop/Ardi_RFID_Shield_Hardware/blob/main/Design%20Data/SCH%204CH%20Relay%20Shield.pdf)
-  * [Hardware Files](https://github.com/sbcshop/Ardi_RFID_Shield_Hardware/tree/main)
-  * [Step File](https://github.com/sbcshop/Ardi_RFID_Shield_Hardware/blob/main/Mechanical%20Data/STEP%204CH%20Relay%20Shield.step)
+  * [Schematic](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/blob/main/Design%20Data/SCH%20UHF%20Lite%20Shield.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/tree/main)
+  * [Step File](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/blob/main/Mechanical%20Data/STEP%20UHF%20Lite%20Shield.step)
 
 
 ## Related Products
