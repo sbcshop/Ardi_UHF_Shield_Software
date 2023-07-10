@@ -107,11 +107,14 @@ UHF RFID reader App - [Download](https://github.com/sbcshop/Ardi_UHF_Shield_Soft
 * Select suitable com port, you may get different 
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img1.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img2.png"/>
+
 * Click on Connect button
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img3.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img4.png"/>
+
 * Select your region
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img5.png"/>
+
 * Other settings which you may apply
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img6.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img7.png"/>
