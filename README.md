@@ -7,7 +7,7 @@ This github provides getting started guide and other working details for Ardi UH
 ### Features:
 - Onboard High-performance UHF RFID reader module
 - 24 hours x 365 days’ work normally
-- 91” OLED display for visual interaction with shield
+- 0.91” OLED display for visual interaction with shield
 - Multi-tone Buzzer onboard for Audio alerts
 - Shield compatible with both 3.3V and 5V MCU
 - Mounts directly onto your [ArdiPi](https://shop.sb-components.co.uk/products/ardipi-uno-r3-alternative-board-based-on-pico-w), [Ardi-32](https://shop.sb-components.co.uk/products/ardi32-uno-r3-alternative-board-based-on-esp32-s3-wroom), and Arduino compatible boards
