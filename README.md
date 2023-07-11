@@ -72,6 +72,46 @@ When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will 
 | A4/SDA | SDA | Serial Data for I2C interfacing of OLED display|
 | A5/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
 
+### Commands and Response of UHF module
+- Hardware version Check
+  
+  <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/hardware_version_cmd.png" width="573" height="270">
+
+  **Expected Response**
+  
+  <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/HW_response.png" width="573" height="270">
+
+  code snippets(header file)
+  ```
+  // Add here UHF commands in byte array format to configure, 
+  // refer Manual: https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf
+  static byte HARDWARE_VERSION[]    = {0XBB,0X00,0X03,0X00,0X01,0X00,0X04,0X7E};
+  static byte MULTIPLE_READ[]   = {0XBB, 0X00, 0X27, 0X00, 0X03, 0X22, 0X27, 0X10, 0X83, 0X7E};
+  static byte SINGLE_READ[]     = {0XBB,0X00,0X22,0X00,0X00,0X22,0X7E};
+  static byte STOP_READ[]       = {0XBB,0X00,0X28,0X00,0X00,0X28,0X7E};
+  ```
+  code snippets (main ino file)
+  ```
+  //Uncomment corresponding commands to configure UHF, more command can be added in UHF.h
+  #define commands HARDWARE_VERSION
+  //#define commands MULTIPLE_READ
+  //#define commands SINGLE_READ
+  //#define commands STOP_READ
+  ```
+  **Output on Terminal:**
+  
+  <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/hardware_version_terminal.png" width="573" height="270">
+
+- Similarly for Tag read
+  
+  <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/single_poll_cmd.png">
+
+  Required Command:
+  ```
+   static byte SINGLE_READ[]     = {0XBB,0X00,0X22,0X00,0X00,0X22,0X7E};
+  ```
+    
+  
 ### Example Codes
  Ardi UHF shield Sample codes provided for different boards, codes provided with UHF library files in which some of UHF configuration command included. Taking reference of [UHF command manual](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf) you can add more commands for your applications OR use GUI UHF reader apps to configure UHF.
  - [Ardi UHF shield for ArdiPi](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/ArdiPi_UHF_shield_interfacing)
