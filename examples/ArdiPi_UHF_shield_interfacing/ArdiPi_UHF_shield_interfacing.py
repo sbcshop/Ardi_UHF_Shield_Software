@@ -6,7 +6,7 @@ import time
 WIDTH  = 120   # oled display width
 HEIGHT = 32    # oled display height
 
-enable_pin = machine.Pin(4, machine.Pin.OUT) #define enable pin as OUTPUT
+enable_pin = machine.Pin(5, machine.Pin.OUT) #define enable pin as OUTPUT
 enable_pin.value(0) #LOW to Enable UHF module, while HIGH value to disable 
 
 BUZZER_PIN = 2 # Piezo buzzer + is connected to GP2, - is connected to the GND
