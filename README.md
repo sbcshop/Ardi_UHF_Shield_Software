@@ -16,8 +16,8 @@ This github provides getting started guide and other working details for Ardi UH
 - OLED resolution 128x32 pixels
 - I2C Interface for OLED
 - UHF Frequency Range :
-	EU/UK: 865.1-867.9 MHz
-	US: 902.25-927.75 MHz
+	- EU/UK: 865.1-867.9 MHz
+	- US: 902.25-927.75 MHz
 - Protocols Supported: EPCglobal UHF Class 1 Gen 2 / ISO 18000-6C
 - Reading Distance: 1meters
 - Can identify over 50 tags simultaneously
