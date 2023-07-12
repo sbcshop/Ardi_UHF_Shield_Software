@@ -118,6 +118,10 @@ When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will 
    static byte SINGLE_READ[]     = {0XBB,0X00,0X22,0X00,0X00,0X22,0X7E};
   ```
 
+  **Output on Terminal:**
+  
+  <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/tag_read_terminal.png" width="573" height="270">
+  
 ### Installing Libraries
    - Download [library zip file](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/libraries.zip) provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
