@@ -73,6 +73,13 @@ When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will 
 | A5/SCL | SCL | Serial Clock for I2C interfacing of OLED display|
 
 ### Commands and Response of UHF module
+
+| Type | Description |
+|---|---|
+| 0x00 | Command Frame: send from PC/Controller to UHF Module chip |
+| 0x01 | Response Frame: send from UHF Module chip to PC/Controller |
+| 0x02 | Notice Frame: send from UHF Module chip to PC/Controller |  
+
 - Hardware version Check
   
   <img src="https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/images/hardware_version_cmd.png" width="573" height="270">
