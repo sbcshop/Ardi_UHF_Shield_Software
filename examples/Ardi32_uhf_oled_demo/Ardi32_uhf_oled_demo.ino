@@ -27,20 +27,18 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 void setup() {
   // To change default I2C pin, Ardi-32 ESP OLED connected on IO38/SDA, IO39/SCL
   Wire.begin(38, 39); // Wire.begin(SDA, SCL)
-
-  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
-  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-    Serial.println(F("SSD1306 allocation failed"));
-    for(;;); // Don't proceed, loop forever
-  }
-  
-  
   pinMode(21,OUTPUT);
   digitalWrite(21,LOW); // LOW - to enable the module and HIGH to disable the module
   
   mySerial.begin(115200, SERIAL_8N1, 18, 17);
   Serial.begin(115200);
   mySerial.setTimeout(2000);
+  
+  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
+  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for(;;); // Don't proceed, loop forever
+  }
 
   display.clearDisplay();
   display.setTextSize(2); // Draw 2X-scale text
