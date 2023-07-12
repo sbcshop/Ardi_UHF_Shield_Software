@@ -133,7 +133,7 @@ When Ardi UHF shield mounted on Arduino Uno, for uploading Code in UNO you will 
  - [Ardi UHF shield for ArdiPi](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/ArdiPi_UHF_shield_interfacing) : Demo shows testing of UHF and onboard OLED with Pico W of ArdiPi.
  - [Ardi UHF shield for Ardi32](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/Ardi32_UHF_shield_interfacing) : Demo shows testing of UHF with ESP32 
  - [Ardi32_OLED Demo](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/Ardi32_OLED_demo) : Simple oled display test with ESP32 of Ardi-32, make sure to install required [libraries](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/libraries.zip) as explained in above section.
- - [Ardi UHF shield for UNO]() : Testing of UHF Reader with Arduino UNO. Make sure to remove shield while uploading code
+ - [Ardi UHF shield for UNO](https://github.com/sbcshop/Ardi_UHF_Shield_Software/tree/main/examples/Arduino_UHF_shield_interfacing) : Testing of UHF Reader with Arduino UNO. Make sure to remove shield while uploading code
  
  Using this sample code as a guide, you can modify, build for other boards and share codes!! 
  
