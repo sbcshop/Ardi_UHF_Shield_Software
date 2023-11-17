@@ -1,5 +1,5 @@
 # Ardi_UHF_Shield_Software
-<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/ArdiUHFShield.jpg?v=1683886717">
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/editbannerArdiUHFShield.jpg?v=1700219444">
 Ardi UHF Shield is designed to seamlessly integrate with your ArdiPi, Ardi-32 and Arduino Uno plus compatible boards, making it accessible to both beginners and experienced users alike.
 
 This github provides getting started guide and other working details for Ardi UHF Shield 
@@ -177,7 +177,9 @@ UHF RFID reader App - [Download](https://github.com/sbcshop/Ardi_UHF_Shield_Soft
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img7.png"/>
 <img src = "https://github.com/sbcshop/UHF_Lite_Pico_Expansion_Software/blob/main/Images/img8.png"/>
 
-[Download UHF Lite Command Manual](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf) for more detail setup reference. 
+**[Download UHF Lite Command Manual*](https://github.com/sbcshop/Ardi_UHF_Shield_Software/blob/main/documents/UHF%20Commands%20Manual.pdf)** for more detail setup reference. 
+
+***Note: Only read operations supported with this board.**
    
 ## Resources
   * [Schematic](https://github.com/sbcshop/Ardi_UHF_Shield_Hardware/blob/main/Design%20Data/SCH%20UHF%20Lite%20Shield.pdf)
