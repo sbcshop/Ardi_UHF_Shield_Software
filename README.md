@@ -18,7 +18,7 @@ This github provides getting started guide and other working details for Ardi UH
 - UHF Frequency Range :
 	- EU/UK: 865.1-867.9 MHz
 	- US: 902.25-927.75 MHz
-- UHF Module Type: Read Only
+- UHF Module Type: Read/Write
 - Protocols Supported: EPCglobal UHF Class 1 Gen 2 / ISO 18000-6C
 - Reading Distance: 1meters
 - Can identify over 50 tags simultaneously
