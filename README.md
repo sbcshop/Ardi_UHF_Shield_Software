@@ -1,5 +1,5 @@
 # Ardi_UHF_Shield_Software
-<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/editbannerArdiUHFShield.jpg?v=1700219444">
+<img src="https://cdn.shopify.com/s/files/1/1217/2104/files/bannerArdiUHFShield.png?v=1701238030">
 Ardi UHF Shield is designed to seamlessly integrate with your ArdiPi, Ardi-32 and Arduino Uno plus compatible boards, making it accessible to both beginners and experienced users alike.
 
 This github provides getting started guide and other working details for Ardi UHF Shield 
